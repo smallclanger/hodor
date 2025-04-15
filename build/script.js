@@ -1,7 +1,7 @@
 import { WORDS } from "./words.js";
 
 const backImageArry = [
-'build/images/backgrounds/background1.png',
+'images/backgrounds/background1.png',
 './images/backgrounds/background2.png',
 './images/backgrounds/background3.jpg',
 './images/backgrounds/background4.jpg',
@@ -563,9 +563,6 @@ window.onload = function () {
 		
 		return;
 	}
-
-    const totalbackgrounds = 9; // 0-19
-    console.log('background' + ((indexForTodaysWord + 52) % totalbackgrounds).toString());
 
     var urlstring = 'url(' + backImageArry[indexForTodaysWord%backImageArry.length]+')';
     
