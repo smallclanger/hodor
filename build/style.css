@@ -1,0 +1,190 @@
+
+* {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	touch-action: manipulation;	
+}
+		
+h1 {
+ text-align: center;
+}
+
+h2 {
+ text-align: center;
+}
+
+form {
+    width: 800px;
+}
+
+@media only screen and (max-width: 800px) {
+    form {
+        width: 100%;
+    }
+}
+
+#game-board {
+  
+  display: table;
+  table-layout:auto;
+  align-items: center;
+  flex-direction: column;  
+  justify-content: center;   
+  background-color:rgba(50,50,50,0.75);
+  width:100%;
+}
+
+#titles {
+	background-color:rgba(50,50,50,0.75);
+	border: 1px solid rgb(128, 128, 128);
+}
+
+.close-btn {
+	  height:40px;
+    width:40px;
+	
+}
+
+.letter-box {
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 3px;
+  margin: 2px;
+  text-align:center;  
+  font-family: SceletAF, Helvetica, sans-serif;
+  font-size: 5cqw;
+  height: 2rem;
+  width: 3rem;
+  display: table-cell;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color:white;
+}
+
+.letter-box:last-child {
+  margin-right: 0px;
+}
+
+#history-list {
+  color:rgb(200, 255, 255);
+}
+
+.space-box {
+  border:hidden;
+  margin: 2px;
+  text-align:center;  
+  font-family: SceletAF, Helvetica, sans-serif;
+  font-size: 5cqw;
+  font-weight: 400;
+  height: 3rem;
+  width: 2rem;
+  display: table-cell;
+  justify-content: center;
+  align-items: center;
+  color:rgb(255, 255, 255);
+}
+
+.filled-box {
+  border: 2px solid gray;
+  color:white
+}
+
+.space-box.filled-box {
+  border:hidden;
+}
+
+.letter-row {
+  display: table-row;  
+}
+
+#keyboard-cont {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;  
+}
+
+#keyboard-cont div {
+  display: flex;  
+}
+
+.second-row {
+  margin: 0.5rem 0;
+}
+
+.number-row {
+  margin: 0.5rem 0;
+}
+
+.keyboard-button {
+  font-family: SceletAF, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  margin: 0 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color:rgb(220,220,220);
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+	display:none;
+  border: 3px solid #f1f1f1;
+  background-color: rgb(236, 200, 40);   
+  
+  align-items: center;
+  justify-content: center; 
+  position:fixed;
+  top:calc(25% - 150px);
+  left:calc(50% - 200px);
+  width:400px;
+  z-index:99999;
+}
+
+.shareButtonContainer{
+	display:grid;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+}
+
+.closeButtonContainer
+{
+  display:grid;
+  align-items: right;
+  justify-content: right; 
+  margin:1px;
+}
+
+.share-btn {
+  display: block;
+  width: 300px;
+  height: 40px;
+  margin: auto;
+}
+
+.correctWord {
+  font-size: 2rem; 
+}
+
+#game-number {
+	text-align:center;
+}
+
+#game-stats {
+	text-align:center;
+}
+
+#special-date {
+	text-align:center;
+}
+
+.hpimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
