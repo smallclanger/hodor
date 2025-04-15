@@ -1,21 +1,21 @@
 import { WORDS } from "./words.js";
 
 const backImageArry = [
-'../images/backgrounds/background1.png',
-'../images/backgrounds/background2.png',
-'../images/backgrounds/background3.jpg',
-'../images/backgrounds/background4.jpg',
-'../images/backgrounds/background5.jpg',
-'../images/backgrounds/background6.jpg',
-'../images/backgrounds/background7.jpg',
-'../images/backgrounds/background8.jpg',
-'../images/backgrounds/background9.jpg',
-'../images/backgrounds/background10.jpg',
-'../images/backgrounds/background11.jpg',
-'../images/backgrounds/background12.jpg',
-'../images/backgrounds/background13.png',
-'../images/backgrounds/background14.jpg',
-'../images/backgrounds/background15.jpg'];
+'./images/backgrounds/background1.png',
+'./images/backgrounds/background2.png',
+'./images/backgrounds/background3.jpg',
+'./images/backgrounds/background4.jpg',
+'./images/backgrounds/background5.jpg',
+'./images/backgrounds/background6.jpg',
+'./images/backgrounds/background7.jpg',
+'./images/backgrounds/background8.jpg',
+'./images/backgrounds/background9.jpg',
+'./images/backgrounds/background10.jpg',
+'./images/backgrounds/background11.jpg',
+'./images/backgrounds/background12.jpg',
+'./images/backgrounds/background13.png',
+'./images/backgrounds/background14.jpg',
+'./images/backgrounds/background15.jpg'];
 
 
 const NUMBER_OF_GUESSES = 8;
