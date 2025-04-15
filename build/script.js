@@ -1,7 +1,7 @@
 import { WORDS } from "./words.js";
 
 const backImageArry = [
-'./images/backgrounds/background1.png',
+'build/images/backgrounds/background1.png',
 './images/backgrounds/background2.png',
 './images/backgrounds/background3.jpg',
 './images/backgrounds/background4.jpg',
