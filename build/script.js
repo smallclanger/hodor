@@ -28,7 +28,7 @@ let allWordGuesses = [];
 var now = new Date();
 var fullDaysSinceEpoch = Math.floor(now / 8.64e7);
 
-var stewsbd = new Date('2025-04-16');
+var stewsbd = new Date('2025-04-15');
 var owenDay = Math.floor(stewsbd / 8.64e7);
 console.log("owen day="+owenDay.toString()+" current:"+fullDaysSinceEpoch.toString());
 
@@ -563,7 +563,7 @@ window.onload = function () {
 		
 		return;
 	}
-    
+
     const totalbackgrounds = 9; // 0-19
     console.log('background' + ((indexForTodaysWord + 52) % totalbackgrounds).toString());
 
