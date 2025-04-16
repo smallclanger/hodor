@@ -144,7 +144,7 @@ form {
 }
 
 .hodorImage {
-  src="image/hodor_sad.png";
+  src:"image/hodor_sad.png";
   border: 3px solid;
 }
 

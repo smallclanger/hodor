@@ -2,21 +2,20 @@ import { WORDS } from "./words.js";
 
 const backImageArry = [
 'images/backgrounds/background1.png',
-'./images/backgrounds/background2.png',
-'./images/backgrounds/background3.jpg',
-'./images/backgrounds/background4.jpg',
-'./images/backgrounds/background5.jpg',
-'./images/backgrounds/background6.jpg',
-'./images/backgrounds/background7.jpg',
-'./images/backgrounds/background8.jpg',
-'./images/backgrounds/background9.jpg',
-'./images/backgrounds/background10.jpg',
-'./images/backgrounds/background11.jpg',
-'./images/backgrounds/background12.jpg',
-'./images/backgrounds/background13.png',
-'./images/backgrounds/background14.jpg',
-'./images/backgrounds/background15.jpg'];
-
+'images/backgrounds/background2.png',
+'images/backgrounds/background3.jpg',
+'images/backgrounds/background4.jpg',
+'images/backgrounds/background5.jpg',
+'images/backgrounds/background6.jpg',
+'images/backgrounds/background7.jpg',
+'images/backgrounds/background8.jpg',
+'images/backgrounds/background9.jpg',
+'images/backgrounds/background10.jpg',
+'images/backgrounds/background11.jpg',
+'images/backgrounds/background12.jpg',
+'images/backgrounds/background13.png',
+'images/backgrounds/background14.jpg',
+'images/backgrounds/background15.jpg'];
 
 const NUMBER_OF_GUESSES = 8;
 let guessesRemaining = NUMBER_OF_GUESSES;
@@ -237,6 +236,7 @@ function checkGuess(rowIndex) {
             totalWins++;
             totalDaysAttempted++;
             currentStreak++;
+            console.log("updated streak",currentStreak);
             if (currentStreak > highestStreak)
                 highestStreak = currentStreak;
             lastSuccessDay = indexForTodaysWord;
@@ -493,15 +493,6 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
     document.dispatchEvent(new KeyboardEvent("keyup", { key: key }));
 });
 
-document.getElementById("Options-Row").addEventListener("click", (e) => {
-    const target = e.target;
-	if( target.classList.contains("history-button"))
-	{
-		console.log("show history");
-		loadHistory();
-		return;
-	}
-});
 
 document.getElementById("myForm").addEventListener("click", (e) => {
     const target = e.target;
@@ -578,6 +569,8 @@ window.onload = function () {
     totalDaysAttempted = JSON.parse(localStorage.getItem(varTotalDays,));
 
 	correctGuessIndex = JSON.parse(localStorage.getItem(varCurrentCorrectIndex,));
+
+    console.log("loaded streak",currentStreak);
 	
 	for(let i=0;i<NUMBER_OF_GUESSES;i++)
 	{
