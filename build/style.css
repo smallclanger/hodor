@@ -86,7 +86,7 @@ form {
 }
 
 .filled-box {
-  border: 2px solid gray;
+  border: 2px solid rgba(248, 3, 3, 0.295);
   color:white
 }
 
@@ -99,6 +99,9 @@ form {
 }
 
 #keyboard-cont {
+  border: 2px solid rgb(248, 3, 3);
+  background-color:rgba(58, 2, 2, 0.75);
+
   margin: 1rem 0;
   display: flex;
   flex-direction: column;
