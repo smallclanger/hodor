@@ -30,12 +30,12 @@ form {
   align-items: center;
   flex-direction: column;  
   justify-content: center;   
-  background-color:rgba(50,50,50,0.75);
+  background-color:rgba(250, 8, 8, 0.164);
   width:100%;
 }
 
 #titles {
-	background-color:rgba(50,50,50,0.75);
+	background-color:rgba(58, 2, 2, 0.75);
 	border: 1px solid rgb(128, 128, 128);
 }
 
@@ -46,7 +46,7 @@ form {
 }
 
 .letter-box {
-  border: 1px solid rgb(128, 128, 128);
+  border: 1px solid rgba(248, 3, 3, 0.295);
   border-radius: 3px;
   margin: 2px;
   text-align:center;  
@@ -126,7 +126,7 @@ form {
   margin: 0 2px;
   cursor: pointer;
   text-transform: uppercase;
-  background-color:rgb(220,220,220);
+  background-color:rgba(243, 3, 3, 0.874);
 }
 
 /* The popup form - hidden by default */

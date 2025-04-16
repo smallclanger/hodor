@@ -163,7 +163,7 @@ function checkGuess(rowIndex) {
 
     var letterColor = [];
     for (let lc = 0; lc < rightGuessString.length; lc++)
-        letterColor.push("gray");
+        letterColor.push("darkred");
 
     // check green
     for (let i = 0; i < rightGuessString.length; i++) {
