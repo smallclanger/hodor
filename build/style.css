@@ -130,6 +130,7 @@ form {
   cursor: pointer;
   text-transform: uppercase;
   background-color:rgba(243, 3, 3, 0.874);
+  color:white
 }
 
 /* The popup form - hidden by default */
