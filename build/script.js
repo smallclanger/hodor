@@ -516,8 +516,16 @@ document.getElementById("myForm").addEventListener("click", (e) => {
     }
 
     let textToShare = "Hodorle " + indexForTodaysWord.toString();
-    if (succeeded) textToShare = textToShare + " " + allGuesses.length.toString() + "/"+NUMBER_OF_GUESSES+"\r\n";
-    else textToShare = textToShare + " X/"+NUMBER_OF_GUESSES+"\r\n";
+    if (succeeded) 
+    {
+        textToShare = textToShare + " " + allGuesses.length.toString() + "/"+NUMBER_OF_GUESSES+"\r\n";
+        textToShare = textToShare + "Streak: " + currentStreak.toString()+"\r\n"; 
+    }
+    else 
+    {
+        textToShare = textToShare + " X/"+NUMBER_OF_GUESSES+"\r\n";
+    }
+
     for (let i = 0; i < allGuesses.length; i++) {
         for (let l = 0; l < allGuesses[i].length; l++) {
             textToShare = textToShare + allGuesses[i][l];
