@@ -46,7 +46,7 @@ form {
 }
 
 .letter-box {
-  border: 1px solid rgba(248, 3, 3, 0.295);
+  border: 1px solid rgba(244, 193, 193, 0.758);
   border-radius: 3px;
   margin: 2px;
   text-align:center;  
@@ -86,7 +86,7 @@ form {
 }
 
 .filled-box {
-  border: 2px solid rgba(248, 3, 3, 0.295);
+  border: 2px solid rgba(244, 193, 193, 0.758);
   color:white
 }
 
